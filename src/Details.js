@@ -35,10 +35,10 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Theo Nicolaou",
+  tagline: "I don't do front end",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `I was born 19 years ago, and have strived to make it everyone else's problem since.`,
 };
 
 // Enter your Social Media URLs here
