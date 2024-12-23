@@ -11,52 +11,26 @@
           How to Make Dark Mode for Websites using HTML CSS & JavaScript  ?
       </title>
     <style>
-        body {
-            padding: 25px;
-            background-color: white;
-            color: black;
-            font-size: 25px;
-        }
 
         .dark-mode {
             background-color: black;
-            color: white;
-        }
-
-        .light-mode {
-            background-color: white;
-            color: black;
+            color: orangered;
         }
     </style>
 </head>
 
 <body>
-    <h1>GeeksForGeeks</h1>
+    <h1></h1>
 
     <p>
-        This is a sample GeeksForGeeks Text.
-        Dark Mode Websites using Html CSS &
-        Javascript
+        This is a portofolio test.
     </p>
-
-    <img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20200122115631/GeeksforGeeks210.png" />
-
-    <h3 id="DarkModetext">Dark Mode is OFF</h3>
-    <button onclick="darkMode()">Darkmode</button>
-    <button onclick="lightMode()">LightMode</button>
     <script>
         function darkMode() {
             let element = document.body;
             let content = document.getElementById("DarkModetext");
             element.className = "dark-mode";
             content.innerText = "Dark Mode is ON";
-        }
-        function lightMode() {
-            let element = document.body;
-            let content = document.getElementById("DarkModetext");
-            element.className = "light-mode";
-            content.innerText = "Dark Mode is OFF";
         }
     </script>
 </body>
