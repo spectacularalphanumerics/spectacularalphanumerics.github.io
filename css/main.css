@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,100 +7,106 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: #121212;
-    color: #fff;
-    font-size: 16px;
+    color: #ffffff;
     line-height: 1.6;
 }
 
-/* Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
     padding: 20px;
-    overflow: hidden;
 }
 
-/* About Me Section */
-.about-me {
-    text-align: center;
-    margin: 50px 0;
-    animation: fadeIn 1s ease-out;
+.about-section, .project-section, .contact-section {
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.about-section {
+    background: #2c3e50;
+}
+
+.project-section {
+    background: #34495e;
+}
+
+.contact-section {
+    background: #16a085;
 }
 
 .title {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.subheading {
-    font-size: 24px;
-    color: #ccc;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ecf0f1;
     margin-bottom: 20px;
-}
-
-.bio {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #ddd;
-}
-
-/* Projects Section */
-.projects {
-    background: #1d1d1d;
-    padding: 40px;
-    margin: 50px 0;
-    border-radius: 8px;
-    animation: fadeIn 1.5s ease-out;
-}
-
-.projects-title {
-    font-size: 36px;
     text-align: center;
-    margin-bottom: 30px;
+    animation: fadeIn 1.2s forwards;
 }
 
-.projects-description {
-    font-size: 18px;
+.subtitle {
+    font-size: 1.5rem;
+    color: #bdc3c7;
+    text-align: center;
+    animation: fadeIn 1.5s forwards;
+}
+
+.about-text, .project-description, .contact-email {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-top: 10px;
     line-height: 1.8;
 }
 
-ul {
-    list-style: none;
+.features-list {
+    list-style-type: none;
+    padding-left: 0;
     margin-top: 20px;
 }
 
-ul li {
-    margin-bottom: 10px;
+.features-list li {
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
 }
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    margin: 50px 0;
-    animation: fadeIn 2s ease-out;
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2ecc71;
 }
 
 .contact-title {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.email {
-    font-size: 20px;
-    color: #7e7e7e;
-}
-
-/* Footer */
-footer {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 20px;
-    background: #1d1d1d;
-    margin-top: 50px;
 }
 
-/* Animations */
+.contact-email {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    text-align: center;
+}
+
 @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -112,37 +117,14 @@ footer {
     }
 }
 
-/* Button & Link Hover Effects */
-button, a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+.about-section {
+    animation-delay: 0.3s;
 }
 
-button:hover, a:hover {
-    background: #fff;
-    color: #121212;
+.project-section {
+    animation-delay: 0.6s;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .title {
-        font-size: 36px;
-    }
-
-    .projects-title {
-        font-size: 28px;
-    }
-
-    .bio, .projects-description {
-        font-size: 16px;
-    }
-
-    .contact-title {
-        font-size: 28px;
-    }
+.contact-section {
+    animation-delay: 0.9s;
 }
