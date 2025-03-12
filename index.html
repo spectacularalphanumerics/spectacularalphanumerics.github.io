@@ -4,53 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" />
+    <title>Portfolio - [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <!-- About Section -->
-        <section class="about-section">
-            <h1 class="title">About Me</h1>
-            <h2 class="subtitle">Computer Engineering student at Politecnico di Torino</h2>
-            <p class="about-text">
-                I have always had a strong passion for tech and problem solving, and this passion has driven me to
-                pursue a career in computer engineering.
-                <br />
-                I have experience in programming languages such as C, Python, and Java/Kotlin. I enjoy working on projects
-                that blend software and hardware to solve real-world problems.
-                <br />
-                I’ve had the opportunity to work with a cybersecurity company called H.
-            </p>
+    <header>
+        <h1>[Your Name]</h1>
+        <p>Computer Engineering Student</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Short description of the project. Technologies used: HTML, CSS, JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Short description of the project. Technologies used: Python, Flask, SQL.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 3</h3>
+                <p>Short description of the project. Technologies used: C++, Arduino.</p>
+            </div>
         </section>
 
-        <!-- Smart Home Project Section -->
-        <section class="project-section">
-            <h2 class="project-title">Smart Home Automation</h2>
-            <p class="project-description">
-                As part of my study into combined hardware/software solutions, I created a smart home system. The system
-                used sensors to detect changes in the environment and a Raspberry Pi to make decisions on what to change.
-                It also had an integrated security system based on cameras and motion sensors.
-            </p>
-            <ul class="features-list">
-                <li>Turning watering systems on/off</li>
-                <li>Adjusting lights based on human presence and time of day</li>
-                <li>Room-specific heating and cooling</li>
-                <li>Making coffee at set times</li>
-                <li>Security system based on motion and thermal sensors</li>
-                <li>Turned off appliances when not in use</li>
-                <li>State-based actions like waking up, leaving, or entering the house</li>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C++, Python, Java, JavaScript</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Tools: Git, Docker, Visual Studio</li>
+                <li>Embedded Systems: Arduino, Raspberry Pi</li>
             </ul>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <h2 class="contact-title">Contact Me:</h2>
-            <p class="contact-email">s342027@protonmail.com</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
         </section>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 [Your Name]. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
