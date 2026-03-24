@@ -1,102 +1,50 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Name's Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Welcome to my personal website!</p>
+    </div>
+  </header>
 
-/* Basic page styling */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-}
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>This is a brief introduction about yourself. You can mention your background, interests, and what you're passionate about.</p>
+    </div>
+  </section>
 
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#">Project 1</a></li>
+        <li><a href="#">Project 2</a></li>
+        <li><a href="#">Project 3</a></li>
+      </ul>
+    </div>
+  </section>
 
-header h1 {
-  font-size: 3rem;
-}
+  <section class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
+  </section>
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* About section */
-.about {
-  background-color: white;
-  padding: 40px 0;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.about p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-/* Projects section */
-.projects {
-  background-color: #fff;
-  padding: 40px 0;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.projects h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.projects ul {
-  list-style: none;
-}
-
-.projects li {
-  margin-bottom: 10px;
-}
-
-.projects a {
-  text-decoration: none;
-  color: #4CAF50;
-}
-
-.projects a:hover {
-  text-decoration: underline;
-}
-
-/* Contact section */
-.contact {
-  background-color: #fff;
-  padding: 40px 0;
-  margin-top: 20px;
-  border-radius: 8px;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.contact a {
-  color: #4CAF50;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Your Name</p>
+    </div>
+  </footer>
+</body>
+</html>
