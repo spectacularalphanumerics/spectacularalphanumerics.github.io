@@ -8,12 +8,13 @@
 /* Basic page styling */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #000000; /* Set background to black */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center align all text */
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #333; /* Dark background for the header */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -30,7 +31,7 @@ header h1 {
 
 /* About section */
 .about {
-  background-color: white;
+  background-color: #222; /* Slightly lighter black for contrast */
   padding: 40px 0;
   margin-top: 20px;
   border-radius: 8px;
@@ -48,7 +49,7 @@ header h1 {
 
 /* Projects section */
 .projects {
-  background-color: #fff;
+  background-color: #222; /* Same as above for consistency */
   padding: 40px 0;
   margin-top: 20px;
   border-radius: 8px;
@@ -69,7 +70,7 @@ header h1 {
 
 .projects a {
   text-decoration: none;
-  color: #4CAF50;
+  color: #4CAF50; /* Green color for links */
 }
 
 .projects a:hover {
@@ -78,7 +79,7 @@ header h1 {
 
 /* Contact section */
 .contact {
-  background-color: #fff;
+  background-color: #222;
   padding: 40px 0;
   margin-top: 20px;
   border-radius: 8px;
@@ -93,65 +94,58 @@ header h1 {
   color: #4CAF50;
 }
 
+/* Portfolio Page Styling */
+.portfolio {
+  background-color: #222;
+  padding: 40px 0;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.portfolio-item a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   background-color: #333;
   color: white;
   padding: 20px 0;
   text-align: center;
-}body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-}
-
-header {
-    text-align: center;
-    padding: 50px 0;
-    border-bottom: 2px solid #000000;
-}
-
-nav {
-    text-align: center;
-    margin: 20px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 40px 0;
-}
-
-.project {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #000000;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #000000;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
