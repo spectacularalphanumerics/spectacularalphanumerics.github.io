@@ -1,64 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Theo</title>
-    <link rel="stylesheet" href="main.css">
-</head>
+/* Basic page styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
 
-<body>
-    <header>
-        <h1>Theo</h1>
-        <p>Computer Engineering Student</p>
-        <p>Politecnico di Torino</p>
-    </header>
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+header h1 {
+  font-size: 3rem;
+}
 
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project. Technologies used: HTML, CSS, JavaScript.</p>
-            </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project. Technologies used: Python, Flask, SQL.</p>
-            </div>
-            <div class="project">
-                <h3>Project Title 3</h3>
-                <p>Short description of the project. Technologies used: C++, Arduino.</p>
-            </div>
-        </section>
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: C, Python, Java, Kotlin</li>
-                <li>Web Development: HTML, CSS</li>
-                <li>Tools: Git, Docker, Visual Studio</li>
-                <li>Embedded Systems: Arduino, Raspberry Pi</li>
-            </ul>
-        </section>
+/* About section */
+.about {
+  background-color: white;
+  padding: 40px 0;
+  margin-top: 20px;
+  border-radius: 8px;
+}
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:s342027@protonmail.com">s342027@protonmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-        </section>
-    </main>
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-    <footer>
-    </footer>
-</body>
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
 
-</html>
+/* Projects section */
+.projects {
+  background-color: #fff;
+  padding: 40px 0;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects ul {
+  list-style: none;
+}
+
+.projects li {
+  margin-bottom: 10px;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section */
+.contact {
+  background-color: #fff;
+  padding: 40px 0;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #4CAF50;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
